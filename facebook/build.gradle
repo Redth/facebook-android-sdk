@@ -56,6 +56,12 @@ android {
     }
 }
 
+apply plugin: 'java'
+
+compileJava {
+    options.compilerArgs << '-parameters'
+}
+
 apply plugin: 'maven'
 apply plugin: 'signing'
 
